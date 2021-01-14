@@ -29,31 +29,35 @@
             <div class="collapse navbar-collapse col-lg-12 col-sm-12" id="navbarNav">
                 <ul class="navbar-nav  ml- auto mx-auto ">
                     <li class="nav-item ">
-                        <a class="titleMenu  mt-2" href="">Accueil</a>
+                        <a class="titleMenu  mt-2" href="accueil">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="titleMenu  mt-2 " href="">Qui sommes nous?</a>
+                        <a class="titleMenu  mt-2 " href="qui-sommes-nous">Qui sommes nous?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="titleMenu  mt-2" href="">Nos clients témoignent</a>
+                        <a class="titleMenu  mt-2" href="nos-clients-témoignent">Nos clients témoignent</a>
                     </li>
                     <li class="nav-item">
-                        <a class="titleMenu  mt-2 " href="">Contact</a>
+                        <a class="titleMenu  mt-2 " href="contact">Contact</a>
                     </li>
                 </ul>
             </div>
     </nav>
     </div>
     <?php
-
-    $xml = simplexml_load_file('source.xml');
-    foreach ($xml->page as $i) {
-        ?>
+    // echo $_GET["page"];
+    if (isset($_GET['page']) == 1) {
+        $xml = simplexml_load_file('source.xml');
+        foreach ($xml->page as $i) {
+            ?>
+    <p class="title"><?= $i->title ?>
+    </p>
     <p class="content"><?= $i->content ?>
     </p>
     <?php
+        }
     }
-        ?>
+    ?>
 
     <footer class="bg-dark text-center align-items-center justify-content-center d-flex p-5">
         <p class="text-center text-white"> © 2021 Copyright </p>

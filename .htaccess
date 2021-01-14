@@ -1,0 +1,6 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule accueil$  /fichier-xml/xml.php?page=1 [L]
+RewriteRule qui-sommes-nous$  /fichier-xml/xml.php?page=2 [L]
+RewriteRule nos-clients-témoignent$  /fichier-xml/xml.php?page=3 [L]
+RewriteRule contact$  /fichier-xml/xml.php?page=4 [L]
