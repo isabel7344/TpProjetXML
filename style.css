@@ -1,0 +1,49 @@
+content{
+    height:auto;
+    width: 100%;
+
+}
+.image-responsive{
+    width: 6rem;
+}
+
+.titleMenu {
+    display: block;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    color:white;
+    text-align: center;
+}
+
+.titleMenu:hover {
+    text-decoration:none;
+    color:orange;
+}
+.titleAccueil{
+    text-align: center;
+    
+}
+.subtitle
+{
+    text-align: center;
+}
+.content1{
+    text-align: center;
+}
+.content2{
+    text-align: center;
+}
+.content3{
+    text-align: center;
+}
+
+.content4{
+    text-align: center;
+}
+/* .img{
+    height: 10rem;
+    width: auto;
+} */
+.caption-text{
+   text-align: center;
+}
