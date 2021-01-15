@@ -1,10 +1,9 @@
-content{
-    height:auto;
-    width: 100%;
-
-}
 .image-responsive{
     width: 6rem;
+}
+
+.title {
+    color: orange;
 }
 
 .titleMenu {
@@ -19,29 +18,33 @@ content{
     text-decoration:none;
     color:orange;
 }
-.titleAccueil{
-    text-align: center;
-    
-}
-.subtitle
-{
-    text-align: center;
-}
-.content1{
-    text-align: center;
-  
-}
-.content2{
-    text-align: center;
-}
-.content3{
+
+.titlePage {
     text-align: center;
 }
 
-.content4{
+.subtitle {
     text-align: center;
+    margin: 2rem;
 }
 
-.caption-text{
+.content1, .content2, .content3, .content4 { 
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+.caption-text {
    text-align: center;
+}
+
+.error404 {
+    background-image: url(../fichier-xml/assets/img/error.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 883px;
 }

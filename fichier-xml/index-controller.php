@@ -1,15 +1,15 @@
 <?php
 
+if (!isset($_GET['page'])) {
+    header('Location: accueil');
+}
 // On parse le fichier
 $xml = simplexml_load_file('source.xml');
 
-// condition pour faire apparaître le nom des menus dans la barre de navigation
-if (!isset($_GET['page']) || (isset($_GET['page']))) {
-    $menu = $xml->page[0]->menu;
-    $menu2 = $xml->page[1]->menu;
-    $menu3 = $xml->page[2]->menu;
-    $menu4 = $xml->page[3]->menu;
-}
+$menu = $xml->page[0]->menu;
+$menu2 = $xml->page[1]->menu;
+$menu3 = $xml->page[2]->menu;
+$menu4 = $xml->page[3]->menu;
 
 // condition pour afficher le contenu title et content de notre fichier source.xml
 if (isset($_GET['page']) && ($_GET['page']) == 1) {
