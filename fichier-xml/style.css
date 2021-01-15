@@ -29,6 +29,7 @@ content{
 }
 .content1{
     text-align: center;
+  
 }
 .content2{
     text-align: center;
@@ -40,10 +41,7 @@ content{
 .content4{
     text-align: center;
 }
-/* .img{
-    height: 10rem;
-    width: auto;
-} */
+
 .caption-text{
    text-align: center;
 }
